@@ -4,7 +4,7 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
 
 /**
- * Data access object class.
+ * Data access object class for Game object.
  */
 @Repository
 public class GameDao {

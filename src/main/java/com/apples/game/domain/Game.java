@@ -6,7 +6,7 @@ package com.apples.game.domain;
 public class Game {
 
     private int gameId;
-    private int gameDifficultyId;
+    private byte gameDifficultyId;
     private String playerName;
     private String gameState;
     private int moves;
@@ -29,7 +29,7 @@ public class Game {
      * @param pMoves moves to set.
      * @param pFinished finished to set.
      */
-    public Game(int pGameId, int pGameDifficultyId, String pPlayerName, String pGameState, int pMoves, boolean pFinished) {
+    public Game(int pGameId, byte pGameDifficultyId, String pPlayerName, String pGameState, int pMoves, boolean pFinished) {
         this.gameId = pGameId;
         this.gameDifficultyId = pGameDifficultyId;
         this.playerName = pPlayerName;
@@ -58,7 +58,7 @@ public class Game {
      * Getter for gameDifficultyId field.
      * @return gameDifficultyId value.
      */
-    public int getGameDifficultyId() {
+    public byte getGameDifficultyId() {
         return gameDifficultyId;
     }
 
@@ -66,7 +66,7 @@ public class Game {
      * Setter for gameDifficultyId field.
      * @param pGameDifficultyId new gameDifficultyId value.
      */
-    public void setGameDifficultyId(int pGameDifficultyId) {
+    public void setGameDifficultyId(byte pGameDifficultyId) {
         this.gameDifficultyId = pGameDifficultyId;
     }
 
